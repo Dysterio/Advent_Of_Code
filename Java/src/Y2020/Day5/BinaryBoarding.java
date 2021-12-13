@@ -44,10 +44,9 @@ public class BinaryBoarding {
             int nextSeat = this.seatIDs.get(i + 1);
             if (nextSeat == thisSeat + 2) {
                 System.out.println(thisSeat + 1);
-                System.exit(0);
+                break;
             }
         }
-        System.exit(-1);
     }
 
     private int calculateSeatLoc(String desc, int max, char lowerHalf, char upperHalf) {
